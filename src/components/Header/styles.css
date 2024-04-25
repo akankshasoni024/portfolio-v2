@@ -1,0 +1,163 @@
+    .mainBackground{
+
+    }
+    
+    .wrapper {
+        max-width: 100%;
+    }
+
+    .heading {
+        font-size: 3rem;
+
+    }
+
+    .text-wrapper {
+        margin: auto;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+
+    }
+
+    .flex-wrapper {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        flex-wrap: wrap-reverse;
+        padding: 5rem;
+
+    }
+
+    .image-wrapper {
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .fullname {
+        font-size: 3rem;
+    }
+
+    .img-container {
+        /* background-color: yellow; */
+        height: 300px;
+        border: 2px solid transparent;
+        border-radius: 50%;
+        width: 300px;
+        max-width: 100%;
+    }
+
+    .social-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    .surname {
+        padding: 0 20px;
+        color: orange;
+    }
+
+    .work {
+        color: brown;
+    }
+
+    .sub-heading {
+        font-size: 25px;
+    }
+
+    .aboutme-button {
+        background-color: darkblue;
+        color: white;
+        padding: 10px 1rem;
+        border: 1px solid transparent;
+        border-radius: 20px;
+        font-weight: bold;
+        width: fit-content;
+        margin: 10px 0;
+
+    }
+
+    .social-icon-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .social-icon {
+        /* background-color: black; */
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        background-color: black;
+    }
+
+    .fa-brands {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .fa-regular {
+        font-size: 25px;
+        text-align: center;
+
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+        .App-logo {
+            animation: App-logo-spin infinite 20s linear;
+        }
+    }
+
+
+    @keyframes App-logo-spin {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    @media screen and (max-width: 920px) {
+
+        .flex-wrapper {
+            position: relative;
+            top: 80px;
+            padding: 4rem 2rem;
+            position: static;
+        }
+
+        .surname {
+            align-self: flex-end;
+            padding: 0;
+
+        }
+
+        .img-container {
+            height: 250px;
+            width: 250px;
+            display: none;
+
+        }
+    }
+
+    @media screen and (max-width: 499px) {
+
+        .flex-wrapper {
+            position: static;
+            top: 130px;
+            padding: 4rem 2rem;
+        }
+
+        .img-container {
+            display: none;
+            height: 200px;
+
+            width: 200px;
+        }
+    }

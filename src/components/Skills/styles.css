@@ -1,0 +1,14 @@
+.grid-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 40%;
+  justify-content: center;
+}
+
+.skills-wrapper {
+  margin: 3rem 1rem;
+}

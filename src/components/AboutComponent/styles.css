@@ -1,0 +1,74 @@
+.card-container {
+    padding: 3rem;
+    background-color: #D9AFD9;
+    /* background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%); */
+    background-image: linear-gradient(180deg, #97D9E1, #D9AFD9, white);
+    width: 100%;
+
+
+}
+
+
+.heading {
+    font-size: 3rem;
+
+}
+
+.text-wrapper {
+    margin: auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.flexbox {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+}
+
+.image-wrapper {
+    margin-right: 2rem;
+    height: 100%;
+    position: sticky;
+    top: 20px;
+}
+
+.fullname {
+    font-size: 2rem;
+}
+
+.image img {
+    background-color: yellow;
+    border: 1px solid black;
+    box-shadow: 1px 2px 15px 2px;
+    margin: 2rem;
+    height: 400px;
+}
+
+
+
+.aboutme-button {
+    background-color: darkblue;
+    color: white;
+    padding: 10px 1rem;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    font-weight: bold;
+    width: fit-content;
+    margin: 10px 0;
+
+}
+
+
+@media screen and (max-width: 499px) {
+    .flexbox {
+        flex-wrap: wrap;
+
+    }
+}
