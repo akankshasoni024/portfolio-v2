@@ -9,9 +9,9 @@ const ContactComponent = () => {
             <div className="screen">
                 <div className="screen-header">
                     <div className="screen-header-left">
-                        <div className="screen-header-button close"></div>
-                        <div className="screen-header-button maximize"></div>
-                        <div className="screen-header-button minimize"></div>
+                        <div className="screen-header-button "></div>
+                        <div className="screen-header-button "></div>
+                        <div className="screen-header-button "></div>
                     </div>
                     <div className="screen-header-right">
                         <div className="screen-header-ellipsis"></div>

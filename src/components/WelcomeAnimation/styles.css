@@ -1,0 +1,43 @@
+/* Global animation styles */
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.word {
+    font-size: 4rem;
+    opacity: 0;
+    transform: scale(0.5);
+    animation: fadeInScale 2s ease-in-out forwards;
+}
+
+/* Animation sequence for each word */
+#word1 {
+    animation-delay: 0s;
+}
+
+#word2 {
+    animation-delay: 2s;
+}
+
+#word3 {
+    animation-delay: 4s;
+}
+
+/* Keyframes for the fade-in and scale-up effect */
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

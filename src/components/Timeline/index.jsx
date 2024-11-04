@@ -6,8 +6,8 @@ const Timeline = () => {
         <div className="timelineContainer">
             <ul>
                 <li style={{ "--accent-color": "#41516C" }}>
-                    <div className="date">2002</div>
-                    <div className="title">Title 1</div>
+                    <div className="date">Diploma in CS</div>
+                    <div className="title">2023</div>
                     <div className="descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas itaque hic quibusdam fugiat est numquam harum, accusamus suscipit consequatur laboriosam!</div>
                 </li>
                 <li style={{ "--accent-color": "#FBCA3E" }}>
