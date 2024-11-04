@@ -1,8 +1,8 @@
 {
-  "homepage": "https://akankshasoni024.github.io/portfolio",
   "name": "akportfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://akankshasoni024.github.io/portfolio",
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "@testing-library/jest-dom": "^5.17.0",
@@ -14,12 +14,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run  build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build" 
   },
   "eslintConfig": {
     "extends": [
