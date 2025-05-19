@@ -1,74 +1,153 @@
+/* Container and layout */
 .card-container {
-    padding: 3rem;
-    background-color: #D9AFD9;
-    /* background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%); */
-    background-image: linear-gradient(180deg, #97D9E1, #D9AFD9, white);
+    padding: 4rem 2rem;
+    background: linear-gradient(180deg, #97d9e1, #d9afd9, #ffffff);
     width: 100%;
-
-
-}
-
-
-.heading {
-    font-size: 3rem;
-
-}
-
-.text-wrapper {
-    margin: auto;
-    text-align: left;
+    box-sizing: border-box;
+  }
+  
+  .flexbox {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    padding: 2.5rem;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  
+  /* Image styles */
+  .image-wrapper {
+    flex: 1 1 300px;
+    max-width: 350px;
+    position: sticky;
+    top: 40px;
+    align-self: flex-start;
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    object-fit: cover;
+    border: 2px solid #2c3e50;
+  }
+  
+  /* Text styles */
+  .text-wrapper {
+    flex: 2 1 500px;
     display: flex;
     flex-direction: column;
-    font-weight: bold;
-    padding: 1rem;
-}
-
-.flexbox {
-    max-width: 1200px;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin: auto;
-    background-color: white;
-}
-
-.image-wrapper {
-    margin-right: 2rem;
-    height: 100%;
-    position: sticky;
-    top: 20px;
-}
-
-.fullname {
+    justify-content: center;
+    text-align: left;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    line-height: 1.6;
+  }
+  
+  .heading {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    color: #34495e;
+  }
+  
+  .fullname1 {
     font-size: 2rem;
-}
-
-.image img {
-    background-color: yellow;
-    border: 1px solid black;
-    box-shadow: 1px 2px 15px 2px;
-    margin: 2rem;
-    height: 400px;
-}
-
-
-
-.aboutme-button {
-    background-color: darkblue;
-    color: white;
-    padding: 10px 1rem;
-    border: 1px solid transparent;
-    border-radius: 20px;
-    font-weight: bold;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+  }
+  
+  .surname {
+    color: #2980b9;
+    font-weight: 700;
+  }
+  
+  .sub-heading {
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    white-space: pre-line;
+    color: #444;
+  }
+  
+  /* Button */
+  .aboutme-button {
+    background-color: #2980b9;
+    color: #fff;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
     width: fit-content;
-    margin: 10px 0;
-
-}
-
-
-@media screen and (max-width: 499px) {
+    transition: background-color 0.3s ease;
+  }
+  
+  .aboutme-button:hover {
+    background-color: #1c5980;
+  }
+  
+  .aboutme-button a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 900px) {
     .flexbox {
-        flex-wrap: wrap;
-
+      flex-direction: column;
+      padding: 2rem;
     }
-}
+  
+    .image-wrapper {
+      position: relative;
+      top: auto;
+      max-width: 100%;
+      margin-bottom: 2rem;
+    }
+  
+    .text-wrapper {
+      text-align: center;
+    }
+  
+    .heading {
+      font-size: 2.4rem;
+    }
+  
+    .fullname1 {
+      font-size: 1.75rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .card-container {
+      padding: 3rem 1rem;
+    }
+  
+    .heading {
+      font-size: 2rem;
+    }
+  
+    .fullname1 {
+      font-size: 1.5rem;
+      display: none;
+    }
+  
+    .sub-heading {
+      font-size: 1rem;
+    }
+  
+    .aboutme-button {
+      width: 100%;
+      padding: 14px 0;
+    }
+  }
+  

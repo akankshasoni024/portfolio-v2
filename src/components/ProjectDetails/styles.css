@@ -1,0 +1,128 @@
+/* .project-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background: #0a0a0a;
+  min-height: 100vh;
+}
+
+.card-container {
+  position: relative;
+  width: 300px; 
+  height: 420px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #1c1c1e;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 20px rgba(255, 140, 0, 0.15);
+  transition: transform 0.3s ease;
+  isolation: isolate;
+  flex-shrink: 0;
+}
+
+.card-container:hover {
+  transform: scale(1.04);
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  margin-bottom: 1rem;
+}
+
+.card-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.card-content p {
+  color: #dcdcdc;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.card-content a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.card-content a:hover {
+  color: #ffd700;
+}
+
+.glow-bg {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, #ff9d00, #ff0033, #000);
+  background-size: 300% 300%;
+  filter: blur(80px);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+  animation: flameMove 2.5s linear infinite;
+  pointer-events: none;
+}
+
+.card-container:hover .glow-bg {
+  opacity: 0.9;
+}
+
+@keyframes flameMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.view-details {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  padding: 10px 20px;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  z-index: 3;
+  transition: all 0.3s ease;
+}
+
+.card-container:hover .view-details {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+} */

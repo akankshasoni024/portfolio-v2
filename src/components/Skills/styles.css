@@ -1,14 +1,57 @@
+.skills-wrapper {
+  margin: 3rem 1rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+.heading {
+  /* text-align: center; */
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .grid-wrapper {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.8rem 2rem;
   justify-content: center;
 }
 
 .card {
-  width: 40%;
-  justify-content: center;
+  background-color: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: default;
 }
 
-.skills-wrapper {
-  margin: 3rem 1rem;
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* FontAwesome icon styling inside ProgressBar assumed */
+.card i {
+  font-size: 2.5rem;
+  color: #2980b9;
+}
+
+/* Responsive font size for heading */
+@media screen and (max-width: 480px) {
+  .heading {
+    font-size: 2rem;
+  }
+  
+  .card {
+    padding: 1rem 1.2rem;
+  }
 }

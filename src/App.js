@@ -6,28 +6,28 @@ import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Skills from './components/Skills';
 import Timeline from './components/Timeline';
-import WelcomeAnimation from './components/WelcomeAnimation'; // Import the animation component
+import WelcomeAnimation from './components/WelcomeAnimation';
+import ProjectDetails from './components/ProjectDetails';
 
 function App() {
   const [showAppContent, setShowAppContent] = useState(false);
 
   useEffect(() => {
-    // Show the app content after the welcome animation is done (6 seconds total)
     const timer = setTimeout(() => {
       setShowAppContent(true);
-    }, 6000); // Adjust this based on animation timing
-    return () => clearTimeout(timer); // Cleanup timer on component unmount
+    }, 6000); 
+    return () => clearTimeout(timer); 
   }, []);
 
   return (
     <div className="App">
-      {!showAppContent && <WelcomeAnimation />}  {/* Show animation */}
-      {showAppContent &&     <>               {/* Show app content after animation */}
-       
+      {!showAppContent && <WelcomeAnimation />}  
+      {showAppContent &&     <>               
           <Navbar />
           <Header />
           <AboutComponent />
           <Skills />
+          {/* <ProjectDetails/> */}
           <Timeline />
           <ContactComponent />
           </> 
