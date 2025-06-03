@@ -34,7 +34,7 @@ const ProjectDetails = () => {
             <div className="card-icon">{project.icon}</div>
             <h2>{project.title}</h2>
             <p>{project.description}</p>
-            <a href="#">Learn more</a>
+            <a href="#about">Learn more</a>
             <div className="view-details">View Details</div>
           </div>
         </div>

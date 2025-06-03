@@ -7,7 +7,6 @@ import Navbar from './components/Navbar';
 import Skills from './components/Skills';
 import Timeline from './components/Timeline';
 import WelcomeAnimation from './components/WelcomeAnimation';
-import ProjectDetails from './components/ProjectDetails';
 
 function App() {
   const [showAppContent, setShowAppContent] = useState(false);
